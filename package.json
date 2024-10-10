@@ -1,15 +1,23 @@
 {
-  "name": "mi-portafolio",
+  "name": "my-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "build": "purgecss --css Sass/custom.css --content index.html -o css/reducido.css"
+    "build": "purgecss --css scss/style.css --content ./index.html -o css/app.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.0-alpha3"
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "lightbox2": "^2.11.4",
+    "owl.carousel": "^2.3.4",
+    "typed.js": "^2.1.0",
+    "waypoints": "^4.0.1"
   }
 }

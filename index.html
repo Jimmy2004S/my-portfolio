@@ -1,82 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mi curriculum </title>
-    <link href="css/style.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/reducido.css">
-    
+    <meta charset="utf-8">
+    <title>My portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="scss/style.css" rel="stylesheet">
 </head>
-<body>
-    <div class="contenedor">
-        <!-- PANEL IZQUIERDO-->
-        <div class="infor">
-            <img src="imag/Mi foto 2.jpg" alt="">
-            <h1 class="nombre">JIMMY ISAAC <br>
-                JIMENEZ BRAVO</h1>
-            <hr  class="separador"/>
-            <h1 class="subtitulos">PERFIL</h1>
-            <p class="textos">Estudiante universitario. Sin notables
-                experiencias laborales, pero en busca 
-                de pruebas para mostrar sus 
-                capacidades, ganar experiencia y 
-                aprovechar las oportunidades para su 
-                crecimiento personal y profesional. 
-                Le gusta asumir responsabilidades y
-                mantener sus ideales éticos y morales 
-                presentes en cada decisión.
-            </p>
-            <br>
-            <h1 class="subtitulos">INFORMACION DE CONTACTO</h1>
-            <div class="infor_contacto">
-                <a href="tel:+573016634773">
-                    <img src="imag/whatsapp.png" alt="WhatsApp">
-                </a>                  
-                <a href="https://www.linkedin.com/in/jimmyjimenez2004/" target="_blank"> <img src="./imag/link.png"> </a> 
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+    <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+        <source src="resources/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <div class="container-xl content">
+
+        <aside id="aside">
+            <div>
+                <i class="fa-solid fa-code"></i>
             </div>
-            <h1 class="subtitulos">IDIOMAS</h1>
-                <div class="idiomas progress">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 90%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                      <span class="progress-text">Español</span>
+            <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+        </aside>
+
+        <div class="content">
+
+            <!-- Navbar Start -->
+            <!-- <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+                <div class="container py-3 justify-content-end">
+                    <a href="" class="btn btn-outline-primary">Download CV</a>
+                </div>
+            </nav> -->
+            <!-- Navbar End -->
+
+            <!-- Header Start -->
+            <section>
+                <div class="container-fluid d-flex align-items-center" style="padding-top: 50px;">
+                    <div class="container d-flex justify-content-center" style="min-height: 100vh;">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                                <img class="img-fluid w-100 rounded-circle shadow-lg" src="img/profile-t.jpg" alt="">
+                            </div>
+                            <div class="col-lg-7 text-center text-lg-left">
+                                <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                                <h1 class="display-3 text-uppercase mb-2" style="color: #fff">
+                                    Jimmy Jimenez</h1>
+                                <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                                <div class="typed-text d-none">Web Designer, Web Developer, Front End Developer, Apps
+                                    Designer, Apps
+                                    Developer
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="idiomas progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 40%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                      <span class="progress-text">Ingles</span>
+            </section>
+            <!-- Header End -->
+
+            <!-- About Start -->
+            <section>
+                <div class="container-fluid py-2" id="about">
+                    <div class="container">
+                        <div class="position-relative d-flex align-items-center justify-content-center">
+                            <h1 class="display-1 text-uppercase"
+                                style="-webkit-text-stroke: 1px #9f9f9feb; color: #ffffff00">About
+                            </h1>
+                            <h1 class="position-absolute text-uppercase text-light"
+                                style="-webkit-text-stroke: 1px white">About Me
+                            </h1>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 pb-4 pb-lg-0">
+                                <img class="img-fluid rounded w-100" src="" alt="">
+                            </div>
+                            <div class="col-lg-7">
+                                <h3 class="mb-4">Web Developer</h3>
+                                <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod.
+                                    Eos
+                                    ipsum
+                                    est
+                                    tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum. Amet
+                                    dolor
+                                    stet
+                                    lorem diam dolor justo et dolor dolor dolor</p>
+                                <div class="row mb-3">
+                                    <div class="col-sm-6 py-2">
+                                        <h6>Name: <span class="text-secondary">Jimmy Jimenez</span></h6>
+                                    </div>
+                                    <div class="col-sm-6 py-2">
+                                        <h6>Age: <span class="text-secondary">20 years old</span></h6>
+                                    </div>
+                                    <div class="col-sm-6 py-2">
+                                        <h6>Phone: <span class="text-secondary">+57 3016634773</span></h6>
+                                    </div>
+                                    <div class="col-sm-6 py-2">
+                                        <h6>Address: <span class="text-secondary">123 Street, New York, USA</span></h6>
+                                    </div>
+                                    <div class="col-sm-6 py-2">
+                                        <h6>Freelance: <span class="text-secondary">Available</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <!-- About End -->
+
+            
         </div>
-        <!-- PANEL DERECHO-->
-        <div class="infor2">
-            <br class="xd">
-            <div class="panel">
-                <h1 class="subtitulos2">EXPERIENCIA LABORAL</h1>
-            </div>
-                <p class="textos2"></p>
-            <div class="panel">
-                <h1 class="subtitulos2">CONOCIMIENTOS</h1>
-           </div>
-           <div class="conocimientos">
-                    <img  src="imag/html.png">
-                    <img  src="imag/bootstrap.png">
-                    <img  src="imag/php.png">
-                    <img  src="imag/mysql.png">
-           </div>
-            <div class="panel">
-                <h1 class="subtitulos2">EDUCACION</h1>
-            </div>
-            <div class="educacion">
-                <p class="date"> 2021 / CARTAGENA BOLIVAR</p>
-                <p class="textos2">Estudiante de UNICOLOMBO, Semestre 4</p>
-                <p>Tecnologo en Desarrollo de sistemas de informacion y software</p>
-                <br/>
-                <p class="date"> 2021 / CARTAGENA BOLIVAR</p>
-                <p class="textos2">Aprendiz en Centro Biotecnologioco del Caribe / SENA</p>
-                <p class="textos2">Tecnologo en Produccion Multimedia</p>
-            </div>  
-        </div>
-    </div> 
+
+    </div>
+
+
+
+
+    <div class="content">
+
+
+
+
+
+    </div>
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
+
+
+
+
+
+
+
+<!-- Qualification Start -->
+<!-- <section>
+            <div class="container-fluid py-2" id="qualification">
+                <div class="container">
+                    <div class="position-relative d-flex align-items-center justify-content-center">
+                        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">
+                            Quality
+                        </h1>
+                        <h1 class="position-absolute text-uppercase text-secondary"
+                            style="-webkit-text-stroke: var(primary)">Education & Expericence</h1>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h3 class="mb-4">My Education</h3>
+                            <div class="border-left border-primary pt-2 pl-4 ml-2">
+                                <div class="position-relative mb-4">
+                                    <i class="far fa-dot-circle text-primary position-absolute"
+                                        style="top: 2px; left: -32px;"></i>
+                                    <h5 class="font-weight-bold mb-1">Master In CSE</h5>
+                                    <p class="mb-2"><strong>Cambridge University</strong> | <small>2000 - 2050</small>
+                                    </p>
+                                    <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor
+                                        eirmod.
+                                        Eos
+                                        ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo
+                                        sit
+                                        ipsum
+                                        stet lorem diam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="mb-4">My Expericence</h3>
+                            <div class="border-left border-primary pt-2 pl-4 ml-2">
+                                <div class="position-relative mb-4">
+                                    <i class="far fa-dot-circle text-primary position-absolute"
+                                        style="top: 2px; left: -32px;"></i>
+                                    <h5 class="font-weight-bold mb-1">Web Designer</h5>
+                                    <p class="mb-2"><strong>Soft Company</strong> | <small>2000 - 2050</small></p>
+                                    <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor
+                                        eirmod.
+                                        Eos
+                                        ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo
+                                        sit
+                                        ipsum
+                                        stet lorem diam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+<!-- Qualification End -->
+
+<!-- Skill Start -->
+<!-- <section>
+            <div class="container-fluid py-5" id="skill">
+                <div class="container">
+                    <div class="position-relative d-flex align-items-center justify-content-center">
+                        <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills
+                        </h1>
+                        <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">HTML</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">CSS</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">PHP</h6>
+                                    <h6 class="font-weight-bold">70%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Javascript</h6>
+                                    <h6 class="font-weight-bold">50%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Laravel</h6>
+                                    <h6 class="font-weight-bold">70%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Wordpress</h6>
+                                    <h6 class="font-weight-bold">70%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+<!-- Skill End -->
+
+<!-- Portfolio Start -->
+<!-- <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+<!-- Portfolio End -->
