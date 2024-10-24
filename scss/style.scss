@@ -1,9 +1,10 @@
 /******* Bootstrap Theming ********/
 
-$primary: #0f044c;
+$primary: #423ad9;
 $secondary: #b6bbc4;
 $light: #ffffff;
 $dark: #343a40;
+$icons: #2a4dbd;
 
 $font-family-sans-serif: "Consolas", sans-serif;
 
@@ -13,7 +14,16 @@ $body-color: $secondary;
 
 $headings-color: $dark;
 
-$display1-size: 10rem;
+$display-font-sizes: (
+  1: 10rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$h1-font-size: 4rem;
 
 $enable-responsive-font-sizes: true;
 
@@ -47,7 +57,7 @@ $enable-responsive-font-sizes: true;
 .content {
   display: flex;
   flex-direction: column;
-  row-gap: 80px;
+  row-gap: 30px;
   position: relative;
   z-index: 1;
   color: white;
@@ -98,6 +108,25 @@ $enable-responsive-font-sizes: true;
   cursor: pointer;
 }
 
+/* About section */
+
+.about-my-data{
+  justify-content: center;
+  row-gap: 10px;
+}
+
+.about-my-data div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.about-my-data div i{
+  color: $icons;
+  font-size: 20px;
+}
+
 
 section {
   display: flex;
@@ -120,32 +149,6 @@ h1,
 .font-weight-bolder {
   font-weight: 900 !important;
 }
-
-h1{
-  font-size: 40rem;
-}
-
-h2{
-  font-size: 20rem;
-}
-
-h3{
-  font-size: 15rem;
-}
-
-h4{
-  font-size: 12rem;
-}
-
-h5{
-  font-size: 10rem;
-}
-
-p{
-  font-size: 15px;
-}
-
-
 
 h2,
 h3,
@@ -171,6 +174,16 @@ h6,
   -webkit-text-stroke: 3px $light;
   color: transparent;
 }
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+p{
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
 
 .btn {
   padding: 10px 25px;
@@ -425,5 +438,3 @@ h6,
   padding: 0;
   list-style-type: none;
 }
-
-@import "../node_modules/bootstrap/scss/bootstrap";
