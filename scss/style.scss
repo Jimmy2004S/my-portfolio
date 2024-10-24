@@ -1,10 +1,10 @@
 /******* Bootstrap Theming ********/
 
-$primary: #423ad9;
+$primary: #3931db;
 $secondary: #b6bbc4;
 $light: #ffffff;
 $dark: #343a40;
-$icons: #2a4dbd;
+$small: #4e48c4;
 
 $font-family-sans-serif: "Consolas", sans-serif;
 
@@ -22,8 +22,6 @@ $display-font-sizes: (
   5: 3rem,
   6: 2.5rem
 );
-
-$h1-font-size: 4rem;
 
 $enable-responsive-font-sizes: true;
 
@@ -109,7 +107,6 @@ $enable-responsive-font-sizes: true;
 }
 
 /* About section */
-
 .about-my-data{
   justify-content: center;
   row-gap: 10px;
@@ -123,22 +120,39 @@ $enable-responsive-font-sizes: true;
 }
 
 .about-my-data div i{
-  color: $icons;
+  color: $primary;
   font-size: 20px;
 }
 
+/* Qualification section */
+.qualification-content{
+  display: flex;
+  row-gap: 40px;  
+}
+
+.qualification-detail-study{
+  font-size: 1.2rem;
+  color: $primary;
+}
+
+.qualification-detail-study span{
+  color: white;
+  font-size: 1rem;
+}
 
 section {
   display: flex;
 }
 
-section:nth-child(odd) .container {
+section {
   background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2%;
+    box-shadow: 0px 0px 10px 0px rgba(62, 112, 251, 0.288);
 }
 
-section:nth-child(even) .container{
-  background-color: rgba(0, 0, 0, 0.7);
-}
+// section:nth-child(even) .container{
+//   background-color: rgba(0, 0, 0, 0.7);
+// }
 
 .container{
   padding: 10% 6% !important;
@@ -147,13 +161,14 @@ section:nth-child(even) .container{
 /********** Template CSS ************/
 h1,
 .font-weight-bolder {
-  font-weight: 900 !important;
+  font-weight: bold !important;
+  letter-spacing: 0.2rem;
 }
 
 h2,
 h3,
 .font-weight-bold {
-  font-weight: 700 !important;
+  font-weight: 800 !important;
 }
 
 h4,
