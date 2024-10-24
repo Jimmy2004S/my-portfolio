@@ -140,6 +140,14 @@ $enable-responsive-font-sizes: true;
   font-size: 1rem;
 }
 
+
+/* Skills section */
+
+.skill div h6{
+  font-weight: bold;
+  color: $secondary;
+}
+
 section {
   display: flex;
 }
@@ -380,6 +388,8 @@ p{
 
 .progress {
   border-radius: 10px;
+  background-color: rgba(33, 116, 155, 0.089);  
+  border: 1px solid $primary;
 }
 
 .progress .progress-bar {
